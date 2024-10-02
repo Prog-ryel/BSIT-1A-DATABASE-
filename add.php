@@ -1,6 +1,6 @@
 <?php 
 
-include_once("connections/connection.php");
+include_once("connection.php");
 $con = connection();
 
 if (isset($_POST['submit'])) {
