@@ -7,7 +7,7 @@ if (isset($_SESSION['Userlogin'])) {
     echo "Welcome " . $_SESSION['Userlogin'];
 }
 
-include_once("connections/connection.php");
+include_once("connection.php");
 $con = connection();
 $search = $_GET['search'];
 $sql = "SELECT * FROM users_list WHERE first_name LIKE '%$search%' || last_name LIKE '%$search%' ORDER BY id DESC";
