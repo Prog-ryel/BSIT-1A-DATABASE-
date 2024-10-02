@@ -9,7 +9,7 @@ if (isset($_SESSION['Userlogin'])) {
     $welcomeMessage = "Welcome";
 }
 
-include_once("connections/connection.php");
+include_once("connection.php");
 $con = connection();
 
 $sql = "SELECT * FROM users_list";
