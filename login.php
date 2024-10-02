@@ -1,6 +1,6 @@
 <?php 
 session_start(); // Make sure to start the session at the beginning
-include_once("connections/connection.php");
+include_once("connection.php");
 $con = connection();
 
 if (isset($_POST['login'])) {
